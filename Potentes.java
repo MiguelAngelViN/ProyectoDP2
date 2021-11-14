@@ -12,6 +12,6 @@ public class Potentes extends RaquetaAbs
     }
     
     public double calcularPotencia(){
-        return this.raqueta.calcularPotencia() * this.getEncorado();
+        return this.raqueta.calcularPotencia();
     }
 }
