@@ -12,13 +12,13 @@ public class RaquetaGenerica implements IRaqueta
     private double peso;
     private double longitud;
     private double tamCabeza;
-    private String encorado;
+    private EnumEncorado encorado;
     private Map <String, String> potenciaMap;
     private Map <String, String> controlMap;
     private Map <String, String> velocidadMap;
 
 
-    public RaquetaGenerica(String nomModelo, double nPeso, double nLongitud, double nTamCabeza, String nomEcnorado)
+    public RaquetaGenerica(String nomModelo, double nPeso, double nLongitud, double nTamCabeza, EnumEncorado nomEcnorado)
     {
         modelo=nomModelo;
         peso=nPeso;
@@ -59,12 +59,16 @@ public class RaquetaGenerica implements IRaqueta
         return tamCabeza;
     }
     
-    public void setEncorado(String nomEncorado){
+    public void setEncorado(EnumEncorado nomEncorado){
         encorado=nomEncorado;
     }
     
-    public String getEncorado(){
+    public EnumEncorado getEncorado(){
         return encorado;
+    }
+    
+    public String tipoEncorado(){
+        return getEncorado().getNombre();
     }
     
     public double calcularPotencia(){
