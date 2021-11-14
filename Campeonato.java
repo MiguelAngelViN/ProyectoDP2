@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Collections;
+import java.util.Set;
+
 /**
  * La clase campeonato representa el campeoato que se va a disputar
  * 
@@ -13,6 +15,8 @@ public class Campeonato{
     private ArrayList <Tenista> competidores;
     private ArrayList <Tenista> eliminados;
     private String datos;
+    private ArrayList <Zapatillas> zapatillasCampeonato;
+    private Set <RaquetaGenerica> raquetasCampeonato;
     
     /**
      * Constructor del objeto de la clase Campeonato
