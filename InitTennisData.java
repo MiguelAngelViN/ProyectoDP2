@@ -12,11 +12,7 @@ public class InitTennisData {
         cargarDatos2(campeonato);//Produce la salida Salida2_EC2
 
     }
-<<<<<<< HEAD
-    
-=======
 
->>>>>>> 7502802d45b9cea5b56fbf0b513419757aa05aef
     private void cargarDatos1(Campeonato campeonato) {
         //Instanciamos 8 zapatillas: (Los parámetros están en el orden: tipo, modelo, número y valor)
         IZapatillas z1 = new ZapatillasAmortiguadas("Air Zoom Vapor Pro", 42,  5);
@@ -38,10 +34,7 @@ public class InitTennisData {
         Tenista t7 = new Tenista("Aryna Sabalenka", z3, 67.5, 79.5, 2, "Bielorrusia", 40);
         Tenista t8 = new Tenista("Daniil Medvedev", z4, 79, 68, 2, "Rusia", 42);
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 7502802d45b9cea5b56fbf0b513419757aa05aef
         //A continuación se inscribirán a los 8 tenistas en el campeonato
         //Instanciamos zapatillas para ser usadas en el campeonato: 
         //(Los parámetros están en el orden: tipo, modelo, número y valor)
@@ -119,10 +112,7 @@ public class InitTennisData {
         campeonato.addRaqueta(r12);
     }
 
-<<<<<<< HEAD
-=======
-    
->>>>>>> 7502802d45b9cea5b56fbf0b513419757aa05aef
+
     private void cargarDatos2(Campeonato campeonato) {
         //Instanciamos 8 zapatillas: (Los parámetros están en el orden: modelo, número, tipo valor)
         IZapatillas z1 = new ZapatillasAmortiguadas("Air Zoom Vapor Pro", 42,  5);
@@ -166,18 +156,19 @@ public class InitTennisData {
         //Instanciamos raquetas para ser usadas en el campeonato: 
         //(Los parámetros están en el orden: Modelo, peso, longitud, tamaño de cabeza, tipo de encordado)
         //Además en el caso de raquetas equilibradas también se indican al final los valores potencia y control
-        r1 = RaquetaPotente("Head Radical", 260, 680, 680,Encordado.ABIERTO);
-        r2 = RaquetaPotente("Wilson Blade", 260, 690, 680, Encordado.ABIERTO);
-        r3 = RaquetaPotente("Dunlop CX200", 300, 700, 630, Encordado.ABIERTO);
-        r4 = RaquetaPotente("Yonex Vcore", 300, 680, 650, Encordado.CERRADO);
-        r5 = RaquetaControlada("Babolat Drive", 340, 740, 600, Encordado.CERRADO);
-        r6 = RaquetaControlada("Pure Aero", 340, 680, 720, Encordado.CERRADO);
-        r7 = RaquetaControlada("TFlash 300", 300, 680, 680, Encordado.CERRADO);
-        r8 = RaquetaControlada("Wilson Silver", 220, 690, 650, Encordado.ABIERTO);
-        r9 = RaquetaEquilibrada("Prince Hornet 100", 220, 690, 600, Encordado.CERRADO, 2.5, 4);
-        r10 = RaquetaEquilibrada("Head Graphene", 320, 690, 630, Encordado.ABIERTO, 6, 2);
-        r11 = RaquetaEquilibrada("Prince TT Bandit", 220, 680, 680, Encordado.CERRADO, 6, 3);
-        r12 = RaquetaEquilibrada("Class 100L", 320, 680, 720, Encordado.ABIERTO, 8, 1);
+        
+        IRaqueta r1 = new RaquetaPotente("Head Radical", 260, 680, 680,EnumEncordado.ABIERTO);
+        IRaqueta r2 = new RaquetaPotente("Wilson Blade", 260, 690, 680, EnumEncordado.ABIERTO);
+        IRaqueta r3 = new RaquetaPotente("Dunlop CX200", 300, 700, 630, EnumEncordado.ABIERTO);
+        IRaqueta r4 = new RaquetaPotente("Yonex Vcore", 300, 680, 650, EnumEncordado.CERRADO);
+        IRaqueta r5 = new RaquetaControlada("Babolat Drive", 340, 740, 600, EnumEncordado.CERRADO);
+        IRaqueta r6 = new RaquetaControlada("Pure Aero", 340, 680, 720, EnumEncordado.CERRADO);
+        IRaqueta r7 = new RaquetaControlada("TFlash 300", 300, 680, 680, EnumEncordado.CERRADO);
+        IRaqueta r8 = new RaquetaControlada("Wilson Silver", 220, 690, 650, EnumEncordado.ABIERTO);
+        IRaqueta r9 = new RaquetaEquilibrada("Prince Hornet 100", 220, 690, 600, EnumEncordado.CERRADO, 2.5, 4);
+        IRaqueta r10 = new RaquetaEquilibrada("Head Graphene", 320, 690, 630, EnumEncordado.ABIERTO, 6, 2);
+        IRaqueta r11 = new RaquetaEquilibrada("Prince TT Bandit", 220, 680, 680, EnumEncordado.CERRADO, 6, 3);
+        IRaqueta r12 = new RaquetaEquilibrada("Class 100L", 320, 680, 720, EnumEncordado.ABIERTO, 8, 1);
 
         campeonato.inscribirTenista(t1);
         campeonato.inscribirTenista(t2);

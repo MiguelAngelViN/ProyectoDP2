@@ -201,7 +201,7 @@ public class Tenista{
     public RaquetaGenerica getRaqueta(){
         return this.raqueta;
     }
-    
+
     public void elegirZapatillas(ArrayList <IZapatillas> zapatillasCampeonato){
         boolean encontrado=false;
         Iterator <IZapatillas> it = zapatillasCampeonato.iterator();

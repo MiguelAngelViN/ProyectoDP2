@@ -7,8 +7,10 @@
  */
 public class RaquetaPotente extends RaquetaGenerica
 {
+    
     public RaquetaPotente(String modelo, double peso, double longitud, double tamCabeza, EnumEncordado encordado){
         super(modelo, peso, longitud, tamCabeza, encordado);
+        
     }
     
     public double calcularPotencia(){
