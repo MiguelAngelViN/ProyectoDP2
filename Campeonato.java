@@ -16,7 +16,7 @@ public class Campeonato{
     private ArrayList <Tenista> competidores;
     private ArrayList <Tenista> eliminados;
     private String datos;
-    private ArrayList <Zapatillas> zapatillasCampeonato;
+    private ArrayList <IZapatillas> zapatillasCampeonato;
     private Set <RaquetaGenerica> raquetasCampeonato;
     
     /**
@@ -27,7 +27,7 @@ public class Campeonato{
         this.nombre= nombre;
         this.competidores= new ArrayList <Tenista>();
         this.eliminados= new ArrayList <Tenista>();
-        this.zapatillasCampeonato=new ArrayList <Zapatillas>();
+        this.zapatillasCampeonato=new ArrayList <IZapatillas>();
         this.raquetasCampeonato=new TreeSet <RaquetaGenerica>(new RaquetasComparador());
         
         datos="";
@@ -108,7 +108,7 @@ public class Campeonato{
         competidores.remove(competidores.size()-1);
     }
     
-    public void addZapatillas(Zapatillas z1){
+    public void addZapatillas(IZapatillas z1){
         zapatillasCampeonato.add(z1);
     }
     

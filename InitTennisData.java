@@ -23,7 +23,7 @@ public class InitTennisData {
         IZapatillas z6 = new ZapatillasAmortiguadas("UberSonic 4K", 40, 6);
         IZapatillas z7 = new ZapatillasAmortiguadas("Zoom GP Turbo", 43, 3.5);
         IZapatillas z8 = new ZapatillasConAgarre("CourtJam Bounce", 42, 3.5);
-        
+
         //Instanciamos 8 tenistas: (Los parámetros están en el orden nombre, zapatillas, saque, resto, ranking, pais y número de pie)
         Tenista t1 = new Tenista("Novak Djokovic",z1 , 90, 80, 1, "Serbia", 42);
         Tenista t2 = new Tenista("Ashleigh Barty", z2, 70, 80, 1, "Australia", 40);
@@ -34,9 +34,7 @@ public class InitTennisData {
         Tenista t7 = new Tenista("Aryna Sabalenka", z3, 67.5, 79.5, 2, "Bielorrusia", 40);
         Tenista t8 = new Tenista("Daniil Medvedev", z4, 79, 68, 2, "Rusia", 42);
 
-        
         //A continuación se inscribirán a los 8 tenistas en el campeonato
-
         //Instanciamos zapatillas para ser usadas en el campeonato: 
         //(Los parámetros están en el orden: tipo, modelo, número y valor)
         IZapatillas z9 = new ZapatillasAmortiguadas("Lotto Space", 40,  5);
@@ -59,30 +57,69 @@ public class InitTennisData {
         //(Los parámetros están en el orden: Modelo, peso, longitud, tamaño de cabeza, tipo de encordado)
         //Además en el caso de raquetas equilibradas también se indican al final los valores potencia y control
 
-        Iraqueta r1 = new RaquetaPotente("Head Radical", 260, 680, 680,Encordado.ABIERTO);
-        Iraqueta r2 = new RaquetaPotente("Wilson Blade", 260, 690, 680, Encordado.ABIERTO);
-        Iraqueta r3 = new RaquetaPotente("Dunlop CX200", 300, 700, 630, Encordado.ABIERTO); 
-        Iraqueta r4 = new RaquetaPotente("Yonex Vcore", 300, 680, 650, Encordado.CERRADO);
-        Iraqueta r5 = new RaquetaControlada("Babolat Drive", 340, 740, 600, Encordado.CERRADO);
-        Iraqueta r6 = new RaquetaControlada("Pure Aero", 340, 680, 720, Encordado.CERRADO);
-        Iraqueta r7 = new RaquetaControlada("TFlash 300", 300, 680, 680, Encordado.CERRADO);
-        Iraqueta r8 = new RaquetaControlada("Wilson Silver", 220, 690, 650, Encordado.ABIERTO);
-        Iraqueta r9 = new RaquetaEquilibrada("Prince Hornet 100", 220, 690, 600, Encordado.CERRADO, 2.5, 4);
-        Iraqueta r10 = new RaquetaEquilibrada("Head Graphene", 320, 690, 630, Encordado.ABIERTO, 6, 2);
-        Iraqueta r11 = new RaquetaEquilibrada("Prince TT Bandit", 220, 680, 680, Encordado.CERRADO, 6, 3);
-        Iraqueta r12 = new RaquetaEquilibrada("Class 100L", 320, 680, 720, Encordado.ABIERTO, 8, 1);
+        IRaqueta r1 = new RaquetaPotente("Head Radical", 260, 680, 680,Encordado.ABIERTO);
+        IRaqueta r2 = new RaquetaPotente("Wilson Blade", 260, 690, 680, Encordado.ABIERTO);
+        IRaqueta r3 = new RaquetaPotente("Dunlop CX200", 300, 700, 630, Encordado.ABIERTO); 
+        IRaqueta r4 = new RaquetaPotente("Yonex Vcore", 300, 680, 650, Encordado.CERRADO);
+        IRaqueta r5 = new RaquetaControlada("Babolat Drive", 340, 740, 600, Encordado.CERRADO);
+        IRaqueta r6 = new RaquetaControlada("Pure Aero", 340, 680, 720, Encordado.CERRADO);
+        IRaqueta r7 = new RaquetaControlada("TFlash 300", 300, 680, 680, Encordado.CERRADO);
+        IRaqueta r8 = new RaquetaControlada("Wilson Silver", 220, 690, 650, Encordado.ABIERTO);
+        IRaqueta r9 = new RaquetaEquilibrada("Prince Hornet 100", 220, 690, 600, Encordado.CERRADO, 2.5, 4);
+        IRaqueta r10 = new RaquetaEquilibrada("Head Graphene", 320, 690, 630, Encordado.ABIERTO, 6, 2);
+        IRaqueta r11 = new RaquetaEquilibrada("Prince TT Bandit", 220, 680, 680, Encordado.CERRADO, 6, 3);
+        IRaqueta r12 = new RaquetaEquilibrada("Class 100L", 320, 680, 720, Encordado.ABIERTO, 8, 1);
+
+        //A continuación se inscribirán a los 8 tenistas en el campeonato
+        campeonato.inscribirTenista(t1);
+        campeonato.inscribirTenista(t2);
+        campeonato.inscribirTenista(t3);
+        campeonato.inscribirTenista(t4);
+        campeonato.inscribirTenista(t5);
+        campeonato.inscribirTenista(t6);
+        campeonato.inscribirTenista(t7);
+        campeonato.inscribirTenista(t8);
+
+        campeonato.addZapatillas(z9);
+        campeonato.addZapatillas(z10);
+        campeonato.addZapatillas(z11);
+        campeonato.addZapatillas(z12);
+        campeonato.addZapatillas(z13);
+        campeonato.addZapatillas(z14);
+        campeonato.addZapatillas(z15);
+        campeonato.addZapatillas(z16);
+        campeonato.addZapatillas(z17);
+        campeonato.addZapatillas(z18);
+        campeonato.addZapatillas(z19);
+        campeonato.addZapatillas(z20);
+        campeonato.addZapatillas(z21);
+        campeonato.addZapatillas(z22);
+        campeonato.addZapatillas(z23);
+
+        campeonato.addRaqueta(r1);
+        campeonato.addRaqueta(r2);
+        campeonato.addRaqueta(r3);
+        campeonato.addRaqueta(r4);
+        campeonato.addRaqueta(r5);
+        campeonato.addRaqueta(r6);
+        campeonato.addRaqueta(r7);
+        campeonato.addRaqueta(r8);
+        campeonato.addRaqueta(r9);
+        campeonato.addRaqueta(r10);
+        campeonato.addRaqueta(r11);
+        campeonato.addRaqueta(r12);
     }
 
     private void cargarDatos2(Campeonato campeonato) {
         //Instanciamos 8 zapatillas: (Los parámetros están en el orden: modelo, número, tipo valor)
-        z1 =  ZapatillasAmortiguadas("Air Zoom Vapor Pro", 42,  5);
-        z2 =  ZapatillasConAgarre("Court Vapor React", 40,  5);
-        z3 =  ZapatillasConAgarre("Gel-Resolution 8 GS", 40,  4);
-        z4 =  ZapatillasAmortiguadas("Vapor Lite", 42,  3);
-        z5 =  ZapatillasConAgarre("Court Lite", 39, 3);
-        z6 =  ZapatillasAmortiguadas("UberSonic 4K", 40, 5.5);
-        z7 =  ZapatillasAmortiguadas("Zoom GP Turbo", 43, 7);
-        z8 =  ZapatillasConAgarre("CourtJam Bounce", 42, 3.5);
+        IZapatillas z1 = new ZapatillasAmortiguadas("Air Zoom Vapor Pro", 42,  5);
+        IZapatillas z2 = new ZapatillasConAgarre("Court Vapor React", 40,  5);
+        IZapatillas z3 = new ZapatillasConAgarre("Gel-Resolution 8 GS", 40,  4);
+        IZapatillas z4 = new ZapatillasAmortiguadas("Vapor Lite", 42,  3);
+        IZapatillas z5 = new ZapatillasConAgarre("Court Lite", 39, 3);
+        IZapatillas z6 = new ZapatillasAmortiguadas("UberSonic 4K", 40, 5.5);
+        IZapatillas z7 = new ZapatillasAmortiguadas("Zoom GP Turbo", 43, 7);
+        IZapatillas z8 = new ZapatillasConAgarre("CourtJam Bounce", 42, 3.5);
 
         //Instanciamos 8 tenistas: (Los parámetros están en el orden nombre, zapatillas, saque, resto, ranking, pais)
         Tenista t1 = new Tenista ("Novak Djokovic", z1, 90, 80, 1, "Serbia", 42);
@@ -128,5 +165,43 @@ public class InitTennisData {
         r10 = RaquetaEquilibrada("Head Graphene", 320, 690, 630, Encordado.ABIERTO, 6, 2);
         r11 = RaquetaEquilibrada("Prince TT Bandit", 220, 680, 680, Encordado.CERRADO, 6, 3);
         r12 = RaquetaEquilibrada("Class 100L", 320, 680, 720, Encordado.ABIERTO, 8, 1);
+
+        campeonato.inscribirTenista(t1);
+        campeonato.inscribirTenista(t2);
+        campeonato.inscribirTenista(t3);
+        campeonato.inscribirTenista(t4);
+        campeonato.inscribirTenista(t5);
+        campeonato.inscribirTenista(t6);
+        campeonato.inscribirTenista(t7);
+        campeonato.inscribirTenista(t8);
+
+        campeonato.addZapatillas(z9);
+        campeonato.addZapatillas(z10);
+        campeonato.addZapatillas(z11);
+        campeonato.addZapatillas(z12);
+        campeonato.addZapatillas(z13);
+        campeonato.addZapatillas(z14);
+        campeonato.addZapatillas(z15);
+        campeonato.addZapatillas(z16);
+        campeonato.addZapatillas(z17);
+        campeonato.addZapatillas(z18);
+        campeonato.addZapatillas(z19);
+        campeonato.addZapatillas(z20);
+        campeonato.addZapatillas(z21);
+        campeonato.addZapatillas(z22);
+        campeonato.addZapatillas(z23);
+
+        campeonato.addRaqueta(r1);
+        campeonato.addRaqueta(r2);
+        campeonato.addRaqueta(r3);
+        campeonato.addRaqueta(r4);
+        campeonato.addRaqueta(r5);
+        campeonato.addRaqueta(r6);
+        campeonato.addRaqueta(r7);
+        campeonato.addRaqueta(r8);
+        campeonato.addRaqueta(r9);
+        campeonato.addRaqueta(r10);
+        campeonato.addRaqueta(r11);
+        campeonato.addRaqueta(r12);
     }
 }
