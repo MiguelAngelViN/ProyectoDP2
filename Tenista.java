@@ -193,7 +193,7 @@ public class Tenista{
     public double getNumPie(){
         return numPie;
     }
-   
+
     public void setRaqueta(RaquetaGenerica raqueta){
         this.raqueta=raqueta;
     }
@@ -202,7 +202,6 @@ public class Tenista{
         return this.raqueta;
     }
     
-
     public void elegirZapatillas(ArrayList <IZapatillas> zapatillasCampeonato){
         boolean encontrado=false;
         Iterator <IZapatillas> it = zapatillasCampeonato.iterator();

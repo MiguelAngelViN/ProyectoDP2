@@ -19,7 +19,10 @@ public class Campeonato{
     private ArrayList <IZapatillas> zapatillasCampeonato;
     private Set <RaquetaGenerica> raquetasCampeonato;
     private Set <IRaqueta> raquetasCampeonato;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7502802d45b9cea5b56fbf0b513419757aa05aef
     
     /**
      * Constructor del objeto de la clase Campeonato
@@ -32,7 +35,10 @@ public class Campeonato{
         this.zapatillasCampeonato=new ArrayList <IZapatillas>();
         this.raquetasCampeonato=new TreeSet <RaquetaGenerica>(new RaquetasComparador());
         this.raquetasCampeonato=new TreeSet <IRaqueta>(new RaquetasComparador());
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7502802d45b9cea5b56fbf0b513419757aa05aef
         
         datos="";
     }

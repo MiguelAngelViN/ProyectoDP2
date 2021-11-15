@@ -12,7 +12,11 @@ public class InitTennisData {
         cargarDatos2(campeonato);//Produce la salida Salida2_EC2
 
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 7502802d45b9cea5b56fbf0b513419757aa05aef
     private void cargarDatos1(Campeonato campeonato) {
         //Instanciamos 8 zapatillas: (Los parámetros están en el orden: tipo, modelo, número y valor)
         IZapatillas z1 = new ZapatillasAmortiguadas("Air Zoom Vapor Pro", 42,  5);
@@ -34,7 +38,10 @@ public class InitTennisData {
         Tenista t7 = new Tenista("Aryna Sabalenka", z3, 67.5, 79.5, 2, "Bielorrusia", 40);
         Tenista t8 = new Tenista("Daniil Medvedev", z4, 79, 68, 2, "Rusia", 42);
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7502802d45b9cea5b56fbf0b513419757aa05aef
         //A continuación se inscribirán a los 8 tenistas en el campeonato
         //Instanciamos zapatillas para ser usadas en el campeonato: 
         //(Los parámetros están en el orden: tipo, modelo, número y valor)
@@ -112,6 +119,10 @@ public class InitTennisData {
         campeonato.addRaqueta(r12);
     }
 
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 7502802d45b9cea5b56fbf0b513419757aa05aef
     private void cargarDatos2(Campeonato campeonato) {
         //Instanciamos 8 zapatillas: (Los parámetros están en el orden: modelo, número, tipo valor)
         IZapatillas z1 = new ZapatillasAmortiguadas("Air Zoom Vapor Pro", 42,  5);
