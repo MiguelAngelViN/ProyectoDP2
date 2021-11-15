@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * La clase Tenista representa a los distintos tenistas que competirán en el campeonato.
@@ -26,7 +28,7 @@ public class Tenista{
      * @param ranking El ranking del tenista
      * @param pais El pais del tenista
      */
-    public Tenista(String nombre, IZapatillas zapatillas, double saque, double resto, int ranking,String pais ){
+    public Tenista(String nombre, IZapatillas zapatillas, double saque, double resto, int ranking,String pais, double numPie){
         this.nombre= nombre;
         this.zapatillas= zapatillas;
         this.saque= saque;
@@ -35,6 +37,7 @@ public class Tenista{
         this.pais= pais;
         this.puntosAcumulados= 0;
         this.posicionElim=0;
+        this.numPie=numPie;
     }
     
     /**
@@ -180,6 +183,28 @@ public class Tenista{
     public void calcularResto(Tenista tenista){
         if(this.getZapatillas().calcularValorResto() * this.getResto() > tenista.getZapatillas().calcularValorSaque() * tenista.getSaque()){
             this.setPuntosAcumulados(this.getPuntosAcumulados() + this.getResto()* this.getZapatillas().calcularValorResto());
+        }
+    }
+    
+    public void setNumPie(double numPie){
+        this.numPie=numPie;
+    }
+    
+    public double getNumPie(){
+        return numPie;
+    }
+    
+    public void elegirZapatillas(ArrayList <Zapatillas> zapatillasCampeonato){
+        boolean encontrado=false;
+        Iterator <Zapatillas> it = zapatillasCampeonato.iterator();
+        Zapatillas z1;
+        while(!encontrado && it.hasNext()){
+            z1=it.next();
+            if(z1.getNumero()==this.getNumPie()){
+                it.remove();
+                this.zapatillas=z1;
+                encontrado=true;
+            }
         }
     }
     

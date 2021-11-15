@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Collections;
 import java.util.Set;
+import java.util.TreeSet;
 
 /**
  * La clase campeonato representa el campeoato que se va a disputar
@@ -26,6 +27,9 @@ public class Campeonato{
         this.nombre= nombre;
         this.competidores= new ArrayList <Tenista>();
         this.eliminados= new ArrayList <Tenista>();
+        this.zapatillasCampeonato=new ArrayList <Zapatillas>();
+        this.raquetasCampeonato=new TreeSet <RaquetaGenerica>(new RaquetasComparador());
+        
         datos="";
     }
     
@@ -103,6 +107,24 @@ public class Campeonato{
         this.competidores.add(nuevaPosicion, tenista);
         competidores.remove(competidores.size()-1);
     }
+    
+    public void addZapatillas(Zapatillas z1){
+        zapatillasCampeonato.add(z1);
+    }
+    
+    public void removeZapatillas(Zapatillas z1){
+        zapatillasCampeonato.remove(z1);
+    }
+    
+    public void addRaqueta(RaquetaGenerica r1){
+        raquetasCampeonato.add(r1);
+    }
+    
+    public void removeRaqueta(RaquetaGenerica r1){
+        raquetasCampeonato.remove(r1);
+    }
+    
+    
     
     /**
      * Pone en marcha todos los partidos hasta que solo quede un tenista que será el ganador
