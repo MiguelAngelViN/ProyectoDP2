@@ -23,7 +23,6 @@ public enum EnumEncordado{
         return nombre;
     }
     
-    
     public double getMultiplicadorPotencia(){
         return multiplicadorPotencia;
     }

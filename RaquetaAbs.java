@@ -4,7 +4,7 @@
  * @author: 
  * Date: 
  */
-public abstract class RaquetaAbs implements IRaqueta
+public abstract class RaquetaAbs
 {
     protected IRaqueta raqueta;
     protected String subtipo;
