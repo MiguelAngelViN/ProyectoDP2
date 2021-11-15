@@ -34,12 +34,12 @@ public abstract class RaquetaAbs implements IRaqueta
         return this.getTamCabeza();
     }
     
-    public EnumEncorado getEncorado(){
-        return this.getEncorado();
+    public EnumEncordado getEncordado(){
+        return this.getEncordado();
     }
     
-    public String tipoEncorado(){
-        return this.tipoEncorado();
+    public String tipoEncordado(){
+        return this.tipoEncordado();
     }
     
     public double calcularPotencia(){

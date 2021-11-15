@@ -11,8 +11,8 @@ public interface IRaqueta{
     public double getPeso();
     public double getLongitud();
     public double getTamCabeza();
-    public EnumEncorado getEncorado();
-    public String tipoEncorado();
+    public EnumEncordado getEncordado();
+    public String tipoEncordado();
     public double calcularPotencia();
     public double calcularControl();
     public double calcularVelocidad();

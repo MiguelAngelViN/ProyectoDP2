@@ -7,7 +7,7 @@
  */
 public class ZapatillasAmortiguadas extends Zapatillas{
     public ZapatillasAmortiguadas(String tipo, int numero, double valor){
-        super("Amortiguacion", numero, valor);
+        super(tipo, numero, valor);
     }
     
     public double calcularValorSaque(){

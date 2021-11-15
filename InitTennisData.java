@@ -34,7 +34,7 @@ public class InitTennisData {
         Tenista t7 = new Tenista("Aryna Sabalenka", z3, 67.5, 79.5, 2, "Bielorrusia", 40);
         Tenista t8 = new Tenista("Daniil Medvedev", z4, 79, 68, 2, "Rusia", 42);
 
-        
+         
         //A continuación se inscribirán a los 8 tenistas en el campeonato
 
         //Instanciamos zapatillas para ser usadas en el campeonato: 
@@ -59,18 +59,18 @@ public class InitTennisData {
         //(Los parámetros están en el orden: Modelo, peso, longitud, tamaño de cabeza, tipo de encordado)
         //Además en el caso de raquetas equilibradas también se indican al final los valores potencia y control
 
-        Iraqueta r1 = new RaquetaPotente("Head Radical", 260, 680, 680,Encordado.ABIERTO);
-        Iraqueta r2 = new RaquetaPotente("Wilson Blade", 260, 690, 680, Encordado.ABIERTO);
-        Iraqueta r3 = new RaquetaPotente("Dunlop CX200", 300, 700, 630, Encordado.ABIERTO); 
-        Iraqueta r4 = new RaquetaPotente("Yonex Vcore", 300, 680, 650, Encordado.CERRADO);
-        Iraqueta r5 = new RaquetaControlada("Babolat Drive", 340, 740, 600, Encordado.CERRADO);
-        Iraqueta r6 = new RaquetaControlada("Pure Aero", 340, 680, 720, Encordado.CERRADO);
-        Iraqueta r7 = new RaquetaControlada("TFlash 300", 300, 680, 680, Encordado.CERRADO);
-        Iraqueta r8 = new RaquetaControlada("Wilson Silver", 220, 690, 650, Encordado.ABIERTO);
-        Iraqueta r9 = new RaquetaEquilibrada("Prince Hornet 100", 220, 690, 600, Encordado.CERRADO, 2.5, 4);
-        Iraqueta r10 = new RaquetaEquilibrada("Head Graphene", 320, 690, 630, Encordado.ABIERTO, 6, 2);
-        Iraqueta r11 = new RaquetaEquilibrada("Prince TT Bandit", 220, 680, 680, Encordado.CERRADO, 6, 3);
-        Iraqueta r12 = new RaquetaEquilibrada("Class 100L", 320, 680, 720, Encordado.ABIERTO, 8, 1);
+        IRaqueta r1 = new RaquetaPotente("Head Radical", 260, 680, 680,Encordado.ABIERTO);
+        IRaqueta r2 = new RaquetaPotente("Wilson Blade", 260, 690, 680, Encordado.ABIERTO);
+        IRaqueta r3 = new RaquetaPotente("Dunlop CX200", 300, 700, 630, Encordado.ABIERTO); 
+        IRaqueta r4 = new RaquetaPotente("Yonex Vcore", 300, 680, 650, Encordado.CERRADO);
+        IRaqueta r5 = new RaquetaControlada("Babolat Drive", 340, 740, 600, Encordado.CERRADO);
+        IRaqueta r6 = new RaquetaControlada("Pure Aero", 340, 680, 720, Encordado.CERRADO);
+        IRaqueta r7 = new RaquetaControlada("TFlash 300", 300, 680, 680, Encordado.CERRADO);
+        IRaqueta r8 = new RaquetaControlada("Wilson Silver", 220, 690, 650, Encordado.ABIERTO);
+        IRaqueta r9 = new RaquetaEquilibrada("Prince Hornet 100", 220, 690, 600, Encordado.CERRADO, 2.5, 4);
+        IRaqueta r10 = new RaquetaEquilibrada("Head Graphene", 320, 690, 630, Encordado.ABIERTO, 6, 2);
+        IRaqueta r11 = new RaquetaEquilibrada("Prince TT Bandit", 220, 680, 680, Encordado.CERRADO, 6, 3);
+        IRaqueta r12 = new RaquetaEquilibrada("Class 100L", 320, 680, 720, Encordado.ABIERTO, 8, 1);
     }
 
     private void cargarDatos2(Campeonato campeonato) {

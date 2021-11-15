@@ -194,10 +194,10 @@ public class Tenista{
         return numPie;
     }
     
-    public void elegirZapatillas(ArrayList <Zapatillas> zapatillasCampeonato){
+    public void elegirZapatillas(ArrayList <IZapatillas> zapatillasCampeonato){
         boolean encontrado=false;
-        Iterator <Zapatillas> it = zapatillasCampeonato.iterator();
-        Zapatillas z1;
+        Iterator <IZapatillas> it = zapatillasCampeonato.iterator();
+        IZapatillas z1;
         while(!encontrado && it.hasNext()){
             z1=it.next();
             if(z1.getNumero()==this.getNumPie()){
