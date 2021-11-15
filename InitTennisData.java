@@ -58,18 +58,18 @@ public class InitTennisData {
         //(Los parámetros están en el orden: Modelo, peso, longitud, tamaño de cabeza, tipo de encordado)
         //Además en el caso de raquetas equilibradas también se indican al final los valores potencia y control
 
-        IRaqueta r1 = new RaquetaPotente("Head Radical", 260, 680, 680,Encordado.ABIERTO);
-        IRaqueta r2 = new RaquetaPotente("Wilson Blade", 260, 690, 680, Encordado.ABIERTO);
-        IRaqueta r3 = new RaquetaPotente("Dunlop CX200", 300, 700, 630, Encordado.ABIERTO); 
-        IRaqueta r4 = new RaquetaPotente("Yonex Vcore", 300, 680, 650, Encordado.CERRADO);
-        IRaqueta r5 = new RaquetaControlada("Babolat Drive", 340, 740, 600, Encordado.CERRADO);
-        IRaqueta r6 = new RaquetaControlada("Pure Aero", 340, 680, 720, Encordado.CERRADO);
-        IRaqueta r7 = new RaquetaControlada("TFlash 300", 300, 680, 680, Encordado.CERRADO);
-        IRaqueta r8 = new RaquetaControlada("Wilson Silver", 220, 690, 650, Encordado.ABIERTO);
-        IRaqueta r9 = new RaquetaEquilibrada("Prince Hornet 100", 220, 690, 600, Encordado.CERRADO, 2.5, 4);
-        IRaqueta r10 = new RaquetaEquilibrada("Head Graphene", 320, 690, 630, Encordado.ABIERTO, 6, 2);
-        IRaqueta r11 = new RaquetaEquilibrada("Prince TT Bandit", 220, 680, 680, Encordado.CERRADO, 6, 3);
-        IRaqueta r12 = new RaquetaEquilibrada("Class 100L", 320, 680, 720, Encordado.ABIERTO, 8, 1);
+        IRaqueta r1 = new RaquetaPotente("Head Radical", 260, 680, 680,EnumEncordado.ABIERTO);
+        IRaqueta r2 = new RaquetaPotente("Wilson Blade", 260, 690, 680, EnumEncordado.ABIERTO);
+        IRaqueta r3 = new RaquetaPotente("Dunlop CX200", 300, 700, 630, EnumEncordado.ABIERTO); 
+        IRaqueta r4 = new RaquetaPotente("Yonex Vcore", 300, 680, 650, EnumEncordado.CERRADO);
+        IRaqueta r5 = new RaquetaControlada("Babolat Drive", 340, 740, 600, EnumEncordado.CERRADO);
+        IRaqueta r6 = new RaquetaControlada("Pure Aero", 340, 680, 720, EnumEncordado.CERRADO);
+        IRaqueta r7 = new RaquetaControlada("TFlash 300", 300, 680, 680, EnumEncordado.CERRADO);
+        IRaqueta r8 = new RaquetaControlada("Wilson Silver", 220, 690, 650, EnumEncordado.ABIERTO);
+        IRaqueta r9 = new RaquetaEquilibrada("Prince Hornet 100", 220, 690, 600, EnumEncordado.CERRADO, 2.5, 4);
+        IRaqueta r10 = new RaquetaEquilibrada("Head Graphene", 320, 690, 630, EnumEncordado.ABIERTO, 6, 2);
+        IRaqueta r11 = new RaquetaEquilibrada("Prince TT Bandit", 220, 680, 680, EnumEncordado.CERRADO, 6, 3);
+        IRaqueta r12 = new RaquetaEquilibrada("Class 100L", 320, 680, 720, EnumEncordado.ABIERTO, 8, 1);
 
 
         //A continuación se inscribirán a los 8 tenistas en el campeonato
@@ -137,21 +137,21 @@ public class InitTennisData {
         //A continuación se inscribirán a los 8 tenistas en el campeonato
         //Instanciamos zapatillas para ser usadas en el campeonato: 
         //(Los parámetros están en el orden: tipo, modelo, número y valor)
-        z9 = ZapatillasAmortiguadas("Lotto Space", 40,  5);
-        z10 = ZapatillasConAgarre("Adidas Gamecourt", 40,  5);
-        z11 = ZapatillasConAgarre("Asics Gel-Game", 42,  4.5);
-        z12 = ZapatillasAmortiguadas("K-Swiss Express", 42,  3);
-        z13 = ZapatillasConAgarre("Joma Slam", 40, 3);
-        z14 = ZapatillasAmortiguadas("Babolat Jet Tere", 42, 5.5);
-        z15 = ZapatillasConAgarre("Asics Solution", 42, 3);
-        z16 = ZapatillasAmortiguadas("K-Swiss Hypercourt", 40,  5);
-        z17 = ZapatillasConAgarre("Nike Air Zoom", 40,  5);
-        z18 = ZapatillasConAgarre("Nike Zoom Vapor", 42,  4);
-        z19 = ZapatillasAmortiguadas("Wilson Rush", 42,  3.5);
-        z20 = ZapatillasAmortiguadas("Head Revolt", 40,  3);
-        z21 = ZapatillasAmortiguadas("Lotto Mirage", 40, 6);
-        z22 = ZapatillasConAgarre("Wilson Kaos", 41,  5);
-        z23 = ZapatillasConAgarre("Head Revolt Pro", 42,  4.5);
+        IZapatillas z9 = new ZapatillasAmortiguadas("Lotto Space", 40,  5);
+        IZapatillas z10 = new ZapatillasConAgarre("Adidas Gamecourt", 40,  5);
+        IZapatillas z11 = new ZapatillasConAgarre("Asics Gel-Game", 42,  4.5);
+        IZapatillas z12 = new ZapatillasAmortiguadas("K-Swiss Express", 42,  3);
+        IZapatillas z13 = new ZapatillasConAgarre("Joma Slam", 40, 3);
+        IZapatillas z14 = new ZapatillasAmortiguadas("Babolat Jet Tere", 42, 5.5);
+        IZapatillas z15 = new ZapatillasConAgarre("Asics Solution", 42, 3);
+        IZapatillas z16 = new ZapatillasAmortiguadas("K-Swiss Hypercourt", 40,  5);
+        IZapatillas z17 = new ZapatillasConAgarre("Nike Air Zoom", 40,  5);
+        IZapatillas z18 = new ZapatillasConAgarre("Nike Zoom Vapor", 42,  4);
+        IZapatillas z19 = new ZapatillasAmortiguadas("Wilson Rush", 42,  3.5);
+        IZapatillas z20 = new ZapatillasAmortiguadas("Head Revolt", 40,  3);
+        IZapatillas z21 = new ZapatillasAmortiguadas("Lotto Mirage", 40, 6);
+        IZapatillas z22 = new ZapatillasConAgarre("Wilson Kaos", 41,  5);
+        IZapatillas z23 = new ZapatillasConAgarre("Head Revolt Pro", 42,  4.5);
 
         //Instanciamos raquetas para ser usadas en el campeonato: 
         //(Los parámetros están en el orden: Modelo, peso, longitud, tamaño de cabeza, tipo de encordado)

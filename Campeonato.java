@@ -17,8 +17,7 @@ public class Campeonato{
     private ArrayList <Tenista> eliminados;
     private String datos;
     private ArrayList <IZapatillas> zapatillasCampeonato;
-    private Set <RaquetaGenerica> raquetasCampeonato;
-    private Set <IRaqueta> raquetasCampeonato;
+    private TreeSet <IRaqueta> raquetasCampeonato;
 
     /**
      * Constructor del objeto de la clase Campeonato
@@ -29,7 +28,6 @@ public class Campeonato{
         this.competidores= new ArrayList <Tenista>();
         this.eliminados= new ArrayList <Tenista>();
         this.zapatillasCampeonato=new ArrayList <IZapatillas>();
-        this.raquetasCampeonato=new TreeSet <RaquetaGenerica>(new RaquetasComparador());
         this.raquetasCampeonato=new TreeSet <IRaqueta>(new RaquetasComparador());
 
         datos="";
@@ -135,7 +133,7 @@ public class Campeonato{
         }
         else{
             for(int i=0;i<competidores.size();i++){
-                raqueta=raquetasCampeonato.get(0);             
+                raqueta=raquetasCampeonato.first();             
             }
         }
         
