@@ -5,9 +5,9 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class ZapatillasAmortiguadas extends ZapatillasAbs{
-    public ZapatillasAmortiguadas(IZapatillas zapatillas, int numero, double valor){
-        super(zapatillas, "Amortiguacion", numero, valor);
+public class ZapatillasAmortiguadas extends Zapatillas{
+    public ZapatillasAmortiguadas(String tipo, int numero, double valor){
+        super("Amortiguacion", numero, valor);
     }
     
     public double calcularValorSaque(){
