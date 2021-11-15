@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Collections;
 import java.util.Set;
-import java.util.TreeSet;
+import java.util.*;
 
 /**
  * La clase campeonato representa el campeoato que se va a disputar
@@ -17,7 +17,7 @@ public class Campeonato{
     private ArrayList <Tenista> eliminados;
     private String datos;
     private ArrayList <IZapatillas> zapatillasCampeonato;
-    private Set <RaquetaGenerica> raquetasCampeonato;
+    private Set <IRaqueta> raquetasCampeonato;
     
     /**
      * Constructor del objeto de la clase Campeonato
@@ -28,7 +28,7 @@ public class Campeonato{
         this.competidores= new ArrayList <Tenista>();
         this.eliminados= new ArrayList <Tenista>();
         this.zapatillasCampeonato=new ArrayList <IZapatillas>();
-        this.raquetasCampeonato=new TreeSet <RaquetaGenerica>(new RaquetasComparador());
+        this.raquetasCampeonato=new TreeSet <IRaqueta>(new RaquetasComparador());
         
         datos="";
     }
@@ -116,15 +116,29 @@ public class Campeonato{
         zapatillasCampeonato.remove(z1);
     }
     
-    public void addRaqueta(RaquetaGenerica r1){
+    public void addRaqueta(IRaqueta r1){
         raquetasCampeonato.add(r1);
     }
     
-    public void removeRaqueta(RaquetaGenerica r1){
+    public void removeRaqueta(IRaqueta r1){
         raquetasCampeonato.remove(r1);
     }
     
-    
+    public boolean asignarRaquetas(){
+        boolean cancelado=false;
+        IRaqueta raqueta;
+        
+        if(raquetasCampeonato.size()<competidores.size()){
+            cancelado=true;
+        }
+        else{
+            for(int i=0;i<competidores.size();i++){
+                raqueta=raquetasCampeonato.get(0);             
+            }
+        }
+        
+        return cancelado;
+    }
     
     /**
      * Pone en marcha todos los partidos hasta que solo quede un tenista que será el ganador
