@@ -6,8 +6,8 @@
  * @version (a version number or a date)
  */
 public class ZapatillasAmortiguadas extends ZapatillasAbs{
-    public ZapatillasAmortiguadas(IZapatillas zapatillas){
-        super(zapatillas, "Amortiguacion");
+    public ZapatillasAmortiguadas(IZapatillas zapatillas, int numero, double valor){
+        super(zapatillas, "Amortiguacion", numero, valor);
     }
     
     public double calcularValorSaque(){

@@ -7,10 +7,13 @@
 public abstract class ZapatillasAbs implements IZapatillas{
     protected IZapatillas zapatillas;
     protected String tipo;
-    
-    public ZapatillasAbs(IZapatillas zapatillas, String tipo){
+    protected int numero;
+    protected double valor;
+    public ZapatillasAbs(IZapatillas zapatillas, String tipo, int numero, double valor){
         this.zapatillas= zapatillas;
         this.tipo= tipo;
+        this.numero= numero;
+        this.valor= valor;
     }
     
     public String getTipo(){
