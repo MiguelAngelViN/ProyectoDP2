@@ -17,7 +17,7 @@ public class Tenista{
     private double puntosAcumulados;
     private int posicionElim;
     private double numPie;
-    private RaquetaGenerica raqTenista;
+    private RaquetaGenerica raqueta;
     
     /**
      * Constructor de la clase tenista
@@ -194,6 +194,17 @@ public class Tenista{
         return numPie;
     }
     
+<<<<<<< HEAD
+=======
+    public void setRaqueta(RaquetaGenerica raqueta){
+        this.raqueta=raqueta;
+    }
+    
+    public RaquetaGenerica getRaqueta(){
+        return this.raqueta;
+    }
+    
+>>>>>>> 480e49c00f955bdaf797e8135d4542ad86b6429d
     public void elegirZapatillas(ArrayList <IZapatillas> zapatillasCampeonato){
         boolean encontrado=false;
         Iterator <IZapatillas> it = zapatillasCampeonato.iterator();

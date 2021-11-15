@@ -35,9 +35,12 @@ public class InitTennisData {
         Tenista t8 = new Tenista("Daniil Medvedev", z4, 79, 68, 2, "Rusia", 42);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
          
 =======
 >>>>>>> c6b71f799f4f2c235494768a92d72e3e359fbbf0
+=======
+>>>>>>> 480e49c00f955bdaf797e8135d4542ad86b6429d
         //A continuación se inscribirán a los 8 tenistas en el campeonato
         //Instanciamos zapatillas para ser usadas en el campeonato: 
         //(Los parámetros están en el orden: tipo, modelo, número y valor)
@@ -74,7 +77,50 @@ public class InitTennisData {
         IRaqueta r11 = new RaquetaEquilibrada("Prince TT Bandit", 220, 680, 680, Encordado.CERRADO, 6, 3);
         IRaqueta r12 = new RaquetaEquilibrada("Class 100L", 320, 680, 720, Encordado.ABIERTO, 8, 1);
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+
+        //A continuación se inscribirán a los 8 tenistas en el campeonato
+        campeonato.inscribirTenista(t1);
+        campeonato.inscribirTenista(t2);
+        campeonato.inscribirTenista(t3);
+        campeonato.inscribirTenista(t4);
+        campeonato.inscribirTenista(t5);
+        campeonato.inscribirTenista(t6);
+        campeonato.inscribirTenista(t7);
+        campeonato.inscribirTenista(t8);
+
+        campeonato.addZapatillas(z9);
+        campeonato.addZapatillas(z10);
+        campeonato.addZapatillas(z11);
+        campeonato.addZapatillas(z12);
+        campeonato.addZapatillas(z13);
+        campeonato.addZapatillas(z14);
+        campeonato.addZapatillas(z15);
+        campeonato.addZapatillas(z16);
+        campeonato.addZapatillas(z17);
+        campeonato.addZapatillas(z18);
+        campeonato.addZapatillas(z19);
+        campeonato.addZapatillas(z20);
+        campeonato.addZapatillas(z21);
+        campeonato.addZapatillas(z22);
+        campeonato.addZapatillas(z23);
+
+        campeonato.addRaqueta(r1);
+        campeonato.addRaqueta(r2);
+        campeonato.addRaqueta(r3);
+        campeonato.addRaqueta(r4);
+        campeonato.addRaqueta(r5);
+        campeonato.addRaqueta(r6);
+        campeonato.addRaqueta(r7);
+        campeonato.addRaqueta(r8);
+        campeonato.addRaqueta(r9);
+        campeonato.addRaqueta(r10);
+        campeonato.addRaqueta(r11);
+        campeonato.addRaqueta(r12);
+    }
+>>>>>>> 480e49c00f955bdaf797e8135d4542ad86b6429d
 
         //A continuación se inscribirán a los 8 tenistas en el campeonato
         campeonato.inscribirTenista(t1);
