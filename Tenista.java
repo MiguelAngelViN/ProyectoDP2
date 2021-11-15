@@ -194,8 +194,6 @@ public class Tenista{
         return numPie;
     }
     
-<<<<<<< HEAD
-=======
     public void setRaqueta(RaquetaGenerica raqueta){
         this.raqueta=raqueta;
     }
@@ -203,8 +201,7 @@ public class Tenista{
     public RaquetaGenerica getRaqueta(){
         return this.raqueta;
     }
-    
->>>>>>> 480e49c00f955bdaf797e8135d4542ad86b6429d
+
     public void elegirZapatillas(ArrayList <IZapatillas> zapatillasCampeonato){
         boolean encontrado=false;
         Iterator <IZapatillas> it = zapatillasCampeonato.iterator();
